@@ -13,6 +13,18 @@ Head('Natours')->css('css/style.css')->show();
         <div class="display-table">
                 <div class="display-content p-0 ">
                         <div class="container m-0 hero-bg" id="hero">
+                                <!-- REFACTOR: Image component -->
+                                <div class="image-wrapper" id="logo-wrapper">
+                                        <img src="img/logo-white.png" alt="Logo" class="logo">
+                                </div>
+
+                                <div class="wrapper" id="hero-content">
+                                        <h1 class="heading-primary">
+                                                <span class="main"><span class="highlight-color ">Out</span>doors</span>
+                                                <span class="sub">is where <span class="highlight-color ">life</span> happens</span>
+                                        </h1>
+                                </div>
+
                         </div>
                 </div>
         </div>

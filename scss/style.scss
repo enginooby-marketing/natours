@@ -1,0 +1,69 @@
+@import "../../../dui/scss/mixins";
+
+:root {
+        --container-max-width: 100vw;
+}
+
+body {
+        padding: 20px;
+}
+
+/*
+COLORS:
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+*/
+
+/*-------------------------
+      HERO
+-------------------------*/
+/* CONTAINER */
+.container#hero {
+        height: 95vh;
+        clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+.hero-bg::before {
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+        background-image: linear-gradient(to right bottom, #7ed56fb4, #28b4859f),
+                url("../img/hero.jpg");
+        background-size: cover;
+        background-position: top; /* top image stays the same when resizing */
+}
+
+/* LOGO */
+#logo-wrapper {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+
+        img {
+                height: 35px;
+        }
+}
+
+/* HEADING */
+.wrapper#hero-content {
+        @include center_div_in_div();
+        top: 40%;
+}
+.heading-primary {
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        .main {
+                display: block;
+                font-size: 5rem;
+                font-weight: 900;
+                letter-spacing: 1.4rem;
+                text-indent: 1.4rem; /*fix center after letter-spacing*/
+        }
+        .sub {
+                display: block;
+                font-size: 2rem;
+                font-weight: 400;
+                letter-spacing: 0.58rem;
+                text-indent: 0.58rem; /*fix center after letter-spacing*/
+        }
+}
