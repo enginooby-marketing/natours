@@ -13,7 +13,7 @@ Medium green: #55c57a
 Dark green: #28b485
 */
 /*-------------------------
-      HERO
+      HERO SECTION
 -------------------------*/
 /* CONTAINER */
 .container#hero {
@@ -75,5 +75,57 @@ Dark green: #28b485
   letter-spacing: 0.58rem;
   text-indent: 0.58rem;
   /*fix center after letter-spacing*/
+}
+
+.flat-style {
+  /* BUTTON */
+}
+
+.flat-style .button-wrapper {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.flat-style .button-wrapper .button {
+  background-color: white;
+  color: black;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.flat-style .button-wrapper .button:hover {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.flat-style .button-wrapper .button:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.flat-style .button-wrapper .button::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  border-radius: var(--border-radius);
+  background-color: white;
+  z-index: -1;
+  opacity: 1;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.flat-style .button-wrapper .button:hover::after {
+  -webkit-transform: scaleX(1.4) scaleY(1.6);
+          transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
 }
 /*# sourceMappingURL=style.css.map */
