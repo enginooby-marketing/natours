@@ -9,8 +9,14 @@ Head('Natours')->css('css/style.css')->show();
 // <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 ?>
 
-<body>
-        <!-- <script async src="../../dui/js/main.js" type="module"></script> -->
+<body class="flat-style">
+        <div class="display-table">
+                <div class="display-content p-0 ">
+                        <div class="container m-0 hero-bg" id="hero">
+                        </div>
+                </div>
+        </div>
+        <script async src="../../dui/js/main.js" type="module"></script>
 </body>
 
 </html>
