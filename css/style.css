@@ -3,7 +3,7 @@
 }
 
 body {
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 /*
@@ -35,12 +35,12 @@ Dark green: #28b485
 /* LOGO */
 #logo-wrapper {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 2.5rem;
+  left: 2.5rem;
 }
 
 #logo-wrapper img {
-  height: 35px;
+  height: 2.2rem;
 }
 
 /* HEADING */
@@ -94,27 +94,27 @@ Dark green: #28b485
 }
 
 .flat-style .button-wrapper .button:hover {
-  -webkit-transform: translateY(-4px);
-          transform: translateY(-4px);
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-0.25rem);
+          transform: translateY(-0.25rem);
+  -webkit-box-shadow: 0 0.62rem 1.25rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.62rem 1.25rem rgba(0, 0, 0, 0.2);
 }
 
 .flat-style .button-wrapper .button:active {
-  -webkit-transform: translateY(-1px);
-          transform: translateY(-1px);
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-0.07rem);
+          transform: translateY(-0.07rem);
+  -webkit-box-shadow: 0 0.3rem 0.62rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.3rem 0.62rem rgba(0, 0, 0, 0.2);
 }
 
 .flat-style .button-wrapper .button::after {
   content: "";
   display: inline-block;
   position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   border-radius: var(--border-radius);
   background-color: white;
   z-index: -1;

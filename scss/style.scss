@@ -5,7 +5,7 @@
 }
 
 body {
-        padding: 20px;
+        padding: 1.25rem;
 }
 
 /*
@@ -35,11 +35,11 @@ Dark green: #28b485
 /* LOGO */
 #logo-wrapper {
         position: absolute;
-        top: 40px;
-        left: 40px;
+        top: 2.5rem;
+        left: 2.5rem;
 
         img {
-                height: 35px;
+                height: 2.2rem;
         }
 }
 
@@ -74,6 +74,7 @@ Dark green: #28b485
         .button-wrapper {
                 // UTIL class
                 animation-delay: 0.3s;
+                // animation-fill-mode: backwards;
                 .button {
                         // ADHOC
                         background-color: white;
@@ -81,16 +82,16 @@ Dark green: #28b485
                         transition: all 0.2s;
                 }
                 .button:hover {
-                        transform: translateY(-4px);
-                        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+                        transform: translateY(-0.25rem);
+                        box-shadow: 0 0.62rem 1.25rem rgba(0, 0, 0, 0.2);
                 }
                 .button:active {
-                        transform: translateY(-1px);
-                        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+                        transform: translateY(-0.07rem);
+                        box-shadow: 0 0.3rem 0.62rem rgba(0, 0, 0, 0.2);
                 }
                 .button::after {
                         // prettier-ignore
-                        @include border_pseudo(0px, var(--border-radius), white);
+                        @include border_pseudo(0, var(--border-radius), white);
                         opacity: 1;
                         transition: all 0.4s;
                 }
